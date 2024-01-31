@@ -1,0 +1,29 @@
+@import "../../main.scss";
+.navbar {
+  background: $mainBlack;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.navbar-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  align-self: center;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.navbar-link {
+  text-transform: capitalize;
+  text-decoration: none;
+  color: $mainWhite;
+  transition: all 0.3s linear;
+  &:hover {
+    cursor: pointer;
+    color: $mainGreen;
+  }
+}
+
+.active {
+  color: $mainGreen;
+}
